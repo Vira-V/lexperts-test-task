@@ -30,7 +30,7 @@ const data = [
   },
 ];
 
-function DraggableBlockList() {
+export const DraggableBlockList = () => {
   const [list, setList] = useState(data);
 
   function handleOnDragEnd(result) {
@@ -42,6 +42,26 @@ function DraggableBlockList() {
 
     setList(items);
   }
+
+  const moveUp = (index) => {
+    if (index > 0) {
+        const items = Array.from(list);
+        const movedItem = items[index];
+        items.splice(index, 1);
+        items.splice(index - 1, 0, movedItem);
+        setList(items);
+    }
+  };
+
+  const moveDown = (index) => {
+    if (index < list.length - 1) {
+        const items = Array.from(list);
+        const movedItem = items[index];
+        items.splice(index, 1);
+        items.splice(index + 1, 0, movedItem);
+        setList(items);
+    }
+  };
 
   return (
     <div className="container">
@@ -56,7 +76,7 @@ function DraggableBlockList() {
               {list.map(({ id, title, subtitle }, index) => {
                 return (
                   <Draggable key={id} draggableId={id} index={index}>
-                    {(provided) => (
+                    {(provided, snapshot) => (
                       <li
                         ref={provided.innerRef}
                         {...provided.draggableProps}
@@ -65,6 +85,17 @@ function DraggableBlockList() {
                         <div className="characters">
                           <h2 className="title">{title}</h2>
                           <h3 className="subtitle">{subtitle}</h3>
+                          <div className="button-container">
+                            <button onClick={() => moveUp(index)} disabled={index === 0}>
+                              Move Up
+                            </button>
+                            <button
+                              onClick={() => moveDown(index)}
+                              disabled={index === list.length - 1}
+                            >
+                              Move Down
+                            </button>
+                          </div>
                         </div>
                       </li>
                     )}
@@ -79,5 +110,3 @@ function DraggableBlockList() {
     </div>
   );
 }
-
-export default DraggableBlockList;
