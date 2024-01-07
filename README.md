@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Task 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The task involves creating a basic version of code in React.js that allows the user to drag and drop blocks to change their order. The application should consist of a list of blocks that can be moved freely within this list.
 
-## Available Scripts
+ 
 
-In the project directory, you can run:
+In this regard, please:
 
-### `npm start`
+ 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Create a `DraggableBlockList` component that displays a list of draggable blocks.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Use React state hooks (e.g., `useState`) to manage the order of the blocks.
 
-### `npm test`
+3. Implement the drag and drop logic that allows for changing the order of the blocks. Ensure that the UI dynamically reflects changes in order.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Provide basic styling so that the blocks are clearly visible and easy to drag.
 
-### `npm run build`
+ 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Additional points can be earned for:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Implementation of animations for the moving blocks.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Adding a “Move up” and “Move down” button that allows changing the order of the blocks in the state, and at the same time the “move up” block should not work for the first element, and similarly, the “move down” block should not work for the last element.
 
-### `npm run eject`
+- Performance optimization (e.g., avoiding unnecessary renderings).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Clean and well-organized code.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+According to expectations
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- The code should be readable and in line with best practices.
 
-## Learn More
+- The application should be functional and free of errors.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- The candidate should be able to explain their approach and design choices.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Solution 
 
-### Code Splitting
+[DEMO LINK](https://vira-v.github.io/lexperts-test-task/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
