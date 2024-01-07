@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lexperts-test-task/static/css/main.16f829d1.css",
+    "main.js": "/lexperts-test-task/static/js/main.78948840.js",
+    "index.html": "/lexperts-test-task/index.html",
+    "main.16f829d1.css.map": "/lexperts-test-task/static/css/main.16f829d1.css.map",
+    "main.78948840.js.map": "/lexperts-test-task/static/js/main.78948840.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16f829d1.css",
+    "static/js/main.78948840.js"
+  ]
+}
